@@ -1,0 +1,101 @@
+/* fil rouge: selecteur, dimensions, couleurs */
+/* Texte */
+/* Background */
+/* Boxes */
+/* positioning */
+/* Flex */
+/* Grid */
+/* Pseudo classe */
+/* Débug */
+/* responsive */
+
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@500&display=swap');
+
+
+body {
+font-family: "font-1, serif";
+background: url(./imag.jpg) no-repeat fixed center; /* notre image restera fixe avec la touche cover */
+height: 500vh;
+}
+h1{
+    text-transform: uppercase; /* mettre le texte en majuscule */
+    letter-spacing: 2px; /* mettre de l'espace entre les lettres */
+    font-size: 2rem; /* la taille du texte  les textes et les polices s'exprime en rem et non en pixel*/
+    color: rgba(0, 0, 255, 0.932); /* pour changer les couleurs */
+    text-shadow: 5px 3px 0px darkgoldenrod;
+    text-align: center; /* position du texte */
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+main {
+
+    background:white;
+    width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 12px 5px black; /* les bordures en noire et de gauche à droite l'intensité de la couleur des ombres */
+}
+.positioning,
+.flexbox
+{
+    border: 2px solid blueviolet;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/***** c'est juste pour la partie positioning */
+.positioning {
+    position: relative;
+}
+h2{
+    margin: 0;
+}
+
+#circle{
+    height: 60px;
+    width: 60px;
+    background: rgb(255, 0, 0);
+    padding: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: 110px;
+    box-shadow: 0 2px 12px 5px yellow(51, 51, 51, 0.13);
+
+}
+
+#rectangle {
+    height: 15px;
+    width: 100px;
+    background:yellow;
+    padding: 20px;
+    position: absolute;
+    bottom: 2px;
+    left:50%;
+    transform: translateX(-50%);
+
+}
+
+/******** partie flexbox */
+ul {
+    /* pour mettre à la ligne tous les li enfants de ul */
+display: flex;
+justify-content: space-around;
+padding: 0px;
+
+}
+
+li{
+    list-style-type: none; /* pour enlever les puces des li */
+    font-size: 0.7rem;
+    height: 160px;
+    width: 160px;
+    background: turquoise;
+    /* pour centrer verticalement les elements dans les boites */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

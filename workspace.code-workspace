@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\keyboards"
+		},
+		{
+			"path": "..\\JU\\calculatrice"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "calculatrice"
+	}
+}
